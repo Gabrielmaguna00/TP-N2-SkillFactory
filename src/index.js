@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Home from './components/home';
+import Form from './components/form';
+import User from './components/users';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

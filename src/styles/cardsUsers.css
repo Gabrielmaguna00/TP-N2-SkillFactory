@@ -1,0 +1,19 @@
+.user {
+  width: 15rem;
+  height: 10rem;
+  border: solid 0.1rem black;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: white;
+  margin: 0.5rem;
+}
+p {
+  display: flex;
+  flex-direction: row;
+}
+* {
+  color: rgb(35, 43, 52);
+}
