@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Descripcion
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+La actividad se basaba en transfomar el TP N°1 (realizado con HTML-CSS-JS) a React JS
 
-## Available Scripts
+## Recursos
 
-In the project directory, you can run:
+Api Rest consumidas:
 
-### `npm start`
+- [https://jsonplaceholder.typicode.com](https://jsonplaceholder.typicode.com)
+- [https://rickandmortyapi.com](https://rickandmortyapi.com)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Correr la app en nuestro PC
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+git clone https://github.com/Gabrielmaguna00/TP-N2-SkillFactory.git
+```
 
-### `npm test`
+```
+cd TP2_SF_React
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Este paso puede llegar a demorar un poco!
 
-### `npm run build`
+```
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Una vez finalizada la instalacion corremos el siguiente comando
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Dirijase a [http://localhost:3000/home](http://localhost:3000/home) para ver la app.
 
-### `npm run eject`
+## Componentes
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Home
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+En el componente Home encontrara tres ventanas el cual cada uno lo redirigira a un componente/url distinto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Form
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+En esta seccion se encontrara un formulario, el cual requiere su nombre, email y un mensaje a dejar. Al enviar el formulario se
+renderizaran cartas con los datos ingresados
 
-## Learn More
+### Users
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+En esta seccion encontra una tabla con datos de clientes. Los mismo son requeridos a la Api de jsonplaceholder (mencionada anteriomente).
+Para manejar la informacion y renderizarla, se utilizaron 2 Hooks de React (useState-useEffect) y el metodo fetch, recibiendo y tratando la promesa con async/await
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Rick and Morty
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+En esta seccionse realizo un trabajo similar al de Users, ya que tambien se utiliza una Api para obtener la informacion. Al ingresar vera distintas cartas con personajes de la serie Rick&Morty.
+Se hizo una peticion a la API para acceder a la informacion de cada personaje y atravez de componentes y estados mostrarlos en el DOM.

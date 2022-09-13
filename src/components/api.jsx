@@ -21,7 +21,7 @@ function Api() {
         </Link>
       </header>{" "}
       <div className="rick" id="rick">
-        {data.length !== 0 ? data.map((e) => <CardRick data={e} />) : null}
+        {data.length !== 0 ? data.map((e) => <CardRick image={e.image} name={e.name} status={e.status} species={e.species} />) : null}
       </div>
       <div className="fondo__home">
         <img className="img__fondo" src={fondo} alt="" />
