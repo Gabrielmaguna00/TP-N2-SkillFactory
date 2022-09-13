@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../styles/form.css";
 import fondo from "../img/form.png";
 import CardUser from "./cardsUsers";
+import { Link } from "react-router-dom";
 
 function Form() {
   const [usuarios, setUsuarios] = useState([]);
@@ -17,16 +18,16 @@ function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // usuarios.push(input);
-    setUsuarios([...usuarios, input])
+    setUsuarios([...usuarios, input]);
     setInput({ name: "", email: "", message: "" });
   };
   // console.log(usuarios);
   return (
     <div>
       <header>
-        <a href="./home">
+        <Link to="/home">
           <button className="boton__back">BACK</button>
-        </a>
+        </Link>
       </header>
       <form action="">
         <ul>

@@ -21,9 +21,7 @@ function Home() {
           </div>
         </Link>
         <Link to={"/rick-morty"}>
-          <div className="cards" id="api">
-            <Api />
-          </div>
+          <div className="cards" id="api"></div>
         </Link>
       </div>
       <div className="fondo__home">

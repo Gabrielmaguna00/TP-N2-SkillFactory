@@ -2,42 +2,45 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border-collapse: collapse;
 }
-table {
+
+.tabla {
   border-collapse: collapse;
   margin: 2em auto auto auto;
-  width: 70em;
+  width: 70vw;
   align-items: center;
   font-weight: normal;
   text-align: initial;
-  background-color: black;
-  color: white;
+  background-color: gray;
+  color: whitesmoke;
+  border-radius: 1rem solid black;
 }
 tr {
-  border: 0.1em solid white;
+  border: 0.1rem solid black;
 }
 th {
-  background-color: black;
-  color: white;
-  border-right: 0.1em solid white;
-  padding: 1em;
+  background-color: gray;
+  color: whitesmoke;
+  border-right: 0.1rem solid black;
+  padding: 1rem;
 }
 td,
 th {
   border-collapse: collapse;
 }
 td {
-  padding: 0.5em;
-  border: 0.1em solid white;
+  padding: 0.5rem;
+  border: 0.1rem solid black;
 }
-.user:hover,
+/* 
 td:hover {
   background-color: white;
   opacity: 0.8;
   color: black;
   border-top: 0.1em solid white;
   border-bottom: 0.1em solid white;
-}
+} */
 
 .boton__back {
   background-color: #000;
